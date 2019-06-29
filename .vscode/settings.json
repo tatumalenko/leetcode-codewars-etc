@@ -1,0 +1,9 @@
+{
+  "eslint.nodePath": "./js",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "eslint.autoFixOnSave": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true
+}

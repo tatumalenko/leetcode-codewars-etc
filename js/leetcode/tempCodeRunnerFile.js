@@ -1,0 +1,1 @@
+trieNode = trieNode.children[currentChar];

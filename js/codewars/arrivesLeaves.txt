@@ -1,0 +1,34 @@
+function solution(S, E) {
+    const numOfGuests = S.length;
+    let totalChairsNeeded = 0;
+    const map = new Map();
+
+    for (let i = 0; i < numOfGuests; i++) {
+        const timeArrives = S[i];
+        const timeLeaves = E[i];
+
+        if (map.has(timeArrives)) {
+            map.set(timeArrives, map.get(timeArrives) + 1);
+        } else {
+            map.set(timeArrives, 1);
+        }
+
+        if (map.has(timeLeaves)) {
+            map.set(timeLeaves, map.get(timeLeaves) - 1);
+        } else {
+            map.set(timeLeaves, -1);
+        }
+    }
+
+    const sortedMap = new Map([...map.entries()].sort());
+
+    let chairsCumulative = 0;
+    for (let [time, chairs] of sortedMap.entries()) {
+        chairsCumulative += chairs;
+        totalChairsNeeded = Math.max(totalChairsNeeded, chairsCumulative);
+    }
+
+    return totalChairsNeeded;
+}
+
+console.log(solution([1, 2, 6, 5, 3], [5, 5, 7, 6, 8]));

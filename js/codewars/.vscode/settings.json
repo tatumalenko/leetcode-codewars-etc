@@ -1,0 +1,11 @@
+{
+  "eslint.enable": false,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "prettier.semi": true,
+  "javascript.format.enable": false,
+  "typescript.validate.enable": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
+}

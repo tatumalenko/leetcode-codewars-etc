@@ -1,0 +1,7 @@
+[package]
+name = "codewars-leetcode-etc"
+version = "0.1.0" 
+
+[[bin]]
+name = "jewels_and_stones_771"
+path = "rust/leetcode/jewels_and_stones_771.rs"
