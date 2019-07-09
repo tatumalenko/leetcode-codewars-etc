@@ -1,26 +1,23 @@
-/**
- * Combinatorics
- */
+package com.tatumalenko.algorithms.datastructures;
+
 public class Combinatorics {
-    public static void main(String[] args) {
-        System.out.println(count(4)); // 6
-        System.out.println(count(10)); // 9496
-        System.out.println(combinations(4, 2)); // 6
-        System.out.println(combinations(10, 2)); // 45
-        System.out.println(combinations(10000, 2)); // 49995000
-        System.out.println(permutations(4, 2)); // 12
-        System.out.println(permutations(10, 4)); // 5040
-        System.out.println(permutations(1000, 2)); // 999000
-    }
+
+//    public static void main(String[] args) {
+//        System.out.println(count(4)); // 6
+//        System.out.println(count(10)); // 9496
+//        System.out.println(combinations(4, 2)); // 6
+//        System.out.println(combinations(10, 2)); // 45
+//        System.out.println(combinations(10000, 2)); // 49995000
+//        System.out.println(permutations(4, 2)); // 12
+//        System.out.println(permutations(10, 4)); // 5040
+//        System.out.println(permutations(1000, 2)); // 999000
+//    }
 
     /**
-     * 
      * @param n
      * @return
-     * 
      * @see <a href=
-     *      "https://www.geeksforgeeks.org/counting-pairs-person-can-form-pair-one/">Link</a>
-     * 
+     * "https://www.geeksforgeeks.org/counting-pairs-person-can-form-pair-one/">Link</a>
      */
     static int count(int n) {
         int[] dp = new int[n + 1];
@@ -33,13 +30,11 @@ public class Combinatorics {
     }
 
     /**
-     * 
      * @param n
      * @param k
      * @return
-     * 
      * @see <a href=
-     *      "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
+     * "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
      */
     static long combinations(int n, int k) {
         long ans = 1;
@@ -57,13 +52,11 @@ public class Combinatorics {
     }
 
     /**
-     * 
      * @param n
      * @param k
      * @return
-     * 
      * @see <a href=
-     *      "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
+     * "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
      */
     static long permutations(int n, int k) {
         long ans = 1;
