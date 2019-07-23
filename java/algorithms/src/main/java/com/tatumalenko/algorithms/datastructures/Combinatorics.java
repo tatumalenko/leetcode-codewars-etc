@@ -16,8 +16,7 @@ public class Combinatorics {
     /**
      * @param n
      * @return
-     * @see <a href=
-     * "https://www.geeksforgeeks.org/counting-pairs-person-can-form-pair-one/">Link</a>
+     * @see <a href= "https://www.geeksforgeeks.org/counting-pairs-person-can-form-pair-one/">Link</a>
      */
     static int count(int n) {
         int[] dp = new int[n + 1];
@@ -33,8 +32,7 @@ public class Combinatorics {
      * @param n
      * @param k
      * @return
-     * @see <a href=
-     * "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
+     * @see <a href= "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
      */
     static long combinations(int n, int k) {
         long ans = 1;
@@ -55,8 +53,7 @@ public class Combinatorics {
      * @param n
      * @param k
      * @return
-     * @see <a href=
-     * "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
+     * @see <a href= "https://stackoverflow.com/questions/11809502/which-is-better-way-to-calculate-ncr">Link</a>
      */
     static long permutations(int n, int k) {
         long ans = 1;
