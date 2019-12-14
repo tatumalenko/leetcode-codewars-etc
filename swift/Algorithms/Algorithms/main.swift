@@ -16,4 +16,5 @@ import Foundation
 //binaryTreeMaxDepth104()
 //naryTreeMaxDepth559()
 //largeSampleStatistics1093()
-findInMountainArray1095()
+//findInMountainArray1095()
+print(missingNumber([0,1,2,3,4]))

@@ -12,8 +12,8 @@ class DecodeString394 {
     func decodeString(_ s: String) -> String {
         var nums: [String] = []
         var brackets: [String] = []
-        var newIntEntry = true
-        var newCharEntry = true
+        let newIntEntry = true
+        let newCharEntry = true
         
         for c in s {
             if Int(String(c)) != nil {
