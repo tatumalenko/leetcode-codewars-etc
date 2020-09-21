@@ -1,26 +1,43 @@
 plugins {
     id 'java'
     id 'idea'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'io.freefair.lombok' version '5.2.1'
 }
 
 group 'com.tatumalenko'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.11
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter:5.5.0')
+    testImplementation('org.junit.jupiter:junit-jupiter:5.6.2')
     testCompile('org.assertj:assertj-core:3.12.2')
     compile('com.google.guava:guava:28.0-jre')
+    testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+    }
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}
+
+compileTestKotlin {
+    kotlinOptions {
+        jvmTarget = "11"
     }
 }
