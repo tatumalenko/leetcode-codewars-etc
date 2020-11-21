@@ -29,7 +29,7 @@ internal class InvertBinaryTree226Test {
 
     @ParameterizedTest
     @MethodSource("arguments")
-    fun invertTree(input: TreeNode?, expected: TreeNode?) {
+    fun test(input: TreeNode?, expected: TreeNode?) {
         assertEquals(expected, InvertBinaryTree226.invertTree(input))
     }
 

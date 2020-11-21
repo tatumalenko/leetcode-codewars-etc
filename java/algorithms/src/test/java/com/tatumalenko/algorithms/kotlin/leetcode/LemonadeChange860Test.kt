@@ -20,7 +20,7 @@ internal class LemonadeChange860Test {
 
     @ParameterizedTest(name = "{index} ==> given {0} should return {1}")
     @MethodSource("arguments")
-    fun lemonadeChange(input: IntArray, expected: Boolean) {
+    fun test(input: IntArray, expected: Boolean) {
         assertEquals(LemonadeChange860.lemonadeChange(input), expected)
     }
 

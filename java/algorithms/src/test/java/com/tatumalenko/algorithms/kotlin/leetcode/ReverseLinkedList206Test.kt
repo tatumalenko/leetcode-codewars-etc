@@ -13,14 +13,14 @@ internal class ReverseLinkedList206Test {
         @JvmStatic
         fun arguments(): Stream<Arguments> = Stream.of(
             Arguments.of(
-                ListNode.of(intArrayOf(1, 2, 3, 4, 5)),
-                ListNode.of(intArrayOf(5, 4, 3, 2, 1)))
+                ListNode.of(1, 2, 3, 4, 5),
+                ListNode.of(5, 4, 3, 2, 1))
         )
     }
 
     @ParameterizedTest
     @MethodSource("arguments")
-    fun reverseList(input: ListNode?, expected: ListNode?) {
+    fun test(input: ListNode?, expected: ListNode?) {
         assertEquals(expected, ReverseLinkedList206.reverseList(input))
     }
 
