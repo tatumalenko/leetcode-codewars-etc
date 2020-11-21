@@ -2,7 +2,7 @@ package com.tatumalenko.algorithms.kotlin.leetcode
 
 import com.tatumalenko.algorithms.kotlin.ds.TreeNode
 
-object RangeSumBST {
+object RangeSumBST938 {
     fun rangeSumBST(root: TreeNode?, low: Int, high: Int): Int {
         return rangeSumBSTRec(root, low, high)
     }
